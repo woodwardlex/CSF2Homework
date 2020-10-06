@@ -42,6 +42,24 @@ namespace TesterProgram
             Vehicles v2 = new Vehicles("Toyota", "Camry", 2009, 12654.46f);
 
             Console.WriteLine(v2);
+
+            Console.WriteLine();
+
+            Console.WriteLine("Login\n");
+
+            Login l1 = new Login();
+            l1.Username = "awoodward";
+            l1.Password = "ilovepineapples12";
+
+            Console.WriteLine(l1);
+
+            Login l2 = new Login("tjmaxx", "shoesshoesshoes");
+
+            Console.WriteLine(l2);
+
+            Console.WriteLine();
+
+
         }//end main
     }//end class
 }//end namespace

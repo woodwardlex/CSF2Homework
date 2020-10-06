@@ -46,9 +46,11 @@ namespace ClassesLibrary
         }
         //default constructor
         public Vehicles() { }
+
+        //methods
         public override string ToString()
         {
             return string.Format("Make: {0}\nModel: {1}\nYear: {2}\nWeight: {3:n2}\n", Make, Model, Year, Weight);
-        }
-    }
-}
+        }//end override ToString()
+    }//end class
+}//end namespace
