@@ -53,7 +53,7 @@ namespace ClassesLibrary
         //methods
         public override string ToString()
         {
-            return string.Format("{0} {1}\n\nID: {2}\nGPA: {3:n2}\n", FirstName, LastName, Id, Gpa);
+            return string.Format("{0} {1}\nID: {2}\nGPA: {3:n2}\n", FirstName, LastName, Id, Gpa);
         }
     }
 }
