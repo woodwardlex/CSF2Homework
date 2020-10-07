@@ -52,6 +52,7 @@ namespace TesterProgram
             l1.Password = "ilovepineapples12";
 
             Console.WriteLine(l1);
+            Console.WriteLine();
 
             Login l2 = new Login("tjmaxx", "shoesshoesshoes");
 
@@ -70,8 +71,11 @@ namespace TesterProgram
             c1.Email = "ktheis@fakeemail.com";
 
             Console.WriteLine(c1);
+            Console.WriteLine();
 
             ContactInfo c2 = new ContactInfo("2341 Runaway St.", "Transylvania", "Pensylvania", "66600", "(666)555-2346", "lackindracin@spooky.com");
+
+            Console.WriteLine(c2);
         }//end main
     }//end class
 }//end namespace
