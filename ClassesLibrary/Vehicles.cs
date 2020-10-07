@@ -50,7 +50,11 @@ namespace ClassesLibrary
         //methods
         public override string ToString()
         {
-            return string.Format("Make: {0}\nModel: {1}\nYear: {2}\nWeight: {3:n2}\n", Make, Model, Year, Weight);
+            return string.Format("Make: {0}\n" +
+                "Model: {1}\n" +
+                "Year: {2}\n" +
+                "Weight: {3:n2}\n",
+                Make, Model, Year, Weight);
         }//end override ToString()
     }//end class
 }//end namespace

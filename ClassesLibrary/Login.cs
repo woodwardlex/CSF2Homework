@@ -21,7 +21,7 @@ namespace ClassesLibrary
         public string Password
         {
             get { return _password; }
-            set { _username = value; }
+            set { _password = value; }
         }//end Password
 
         //CONSTRUCTOR
@@ -36,7 +36,8 @@ namespace ClassesLibrary
         //METHODS
         public override string ToString()
         {
-            return string.Format("Your username is: {0}\nYour password is: {1}", Username, Password);
+            return string.Format("Your username is: {0}\n" +
+                "Your password is: {1}", Username, Password);
         }//end override ToString()
 
     }//end class
