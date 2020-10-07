@@ -59,7 +59,19 @@ namespace TesterProgram
 
             Console.WriteLine();
 
+            Console.WriteLine("Contact Info\n");
 
+            ContactInfo c1 = new ContactInfo();
+            c1.StreetAddress = "32321 Balmain St.";
+            c1.City = "Los Angeles";
+            c1.State = "California";
+            c1.Zip = "90101";
+            c1.Phone = "(901)667-3726";
+            c1.Email = "ktheis@fakeemail.com";
+
+            Console.WriteLine(c1);
+
+            ContactInfo c2 = new ContactInfo("2341 Runaway St.", "Transylvania", "Pensylvania", "66600", "(666)555-2346", "lackindracin@spooky.com");
         }//end main
     }//end class
 }//end namespace
