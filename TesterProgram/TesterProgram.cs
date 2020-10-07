@@ -61,7 +61,7 @@ namespace TesterProgram
             Console.WriteLine();
 
             Console.WriteLine("Contact Info\n");
-
+            #region MyRegion
             ContactInfo c1 = new ContactInfo();
             c1.StreetAddress = "32321 Balmain St.";
             c1.City = "Los Angeles";
@@ -76,6 +76,16 @@ namespace TesterProgram
             ContactInfo c2 = new ContactInfo("2341 Runaway St.", "Transylvania", "Pensylvania", "66600", "(666)555-2346", "lackindracin@spooky.com");
 
             Console.WriteLine(c2);
+            Console.WriteLine();
+            #endregion
+            
+
+            Console.WriteLine("Customer\n");
+            #region Customer
+
+            #endregion
+
+
         }//end main
     }//end class
 }//end namespace
