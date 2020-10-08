@@ -82,31 +82,27 @@ namespace TesterProgram
             ContactInfo p2 = new ContactInfo("99900 Runaway Blvd", "Transylvania", "Pennsylvania", "66600", "(636)222-6660", "itsspookyseason@aol.com");
 
             Console.WriteLine(p2);
-
             #endregion
 
-            Console.WriteLine("Contact Info\n");
-            #region MyRegion
-            ContactInfo c1 = new ContactInfo();
-            c1.StreetAddress = "32321 Balmain St.";
-            c1.City = "Los Angeles";
-            c1.State = "California";
-            c1.Zip = "90101";
-            c1.Phone = "(901)667-3726";
-            c1.Email = "ktheis@fakeemail.com";
+            #region List of Contact Info
+            List<ContactInfo> contact = new List<ContactInfo>();
+            contact.Add(p1);
+            contact.Add(p2);
+            #endregion
+
+            #region Customer
+            Console.WriteLine("Customer\n");
+
+            Customer c1 = new Customer();
+            c1.FirstName = "Analise";
+            c1.LastName = "Misuko";
+            c1.CustomerId = "445689";
+            c1.ContactInformation = contact;
+
+            Customer c2 = new Customer("465645", "Allison", "Lebinski", contact);
 
             Console.WriteLine(c1);
-            Console.WriteLine();
-
-            ContactInfo c2 = new ContactInfo("2341 Runaway St.", "Transylvania", "Pensylvania", "66600", "(666)555-2346", "lackindracin@spooky.com");
-
             Console.WriteLine(c2);
-            Console.WriteLine();
-            #endregion
-            
-
-            Console.WriteLine("Customer\n");
-            #region Customer
 
             #endregion
 
