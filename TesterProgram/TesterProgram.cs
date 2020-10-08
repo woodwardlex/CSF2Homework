@@ -76,12 +76,12 @@ namespace TesterProgram
             p1.Zip = "90016";
             p1.Phone = "(901)465-5562";
             p1.Email = "karatekid12@hotmail.com";
-
-            Console.WriteLine(p1);
-
             ContactInfo p2 = new ContactInfo("99900 Runaway Blvd", "Transylvania", "Pennsylvania", "66600", "(636)222-6660", "itsspookyseason@aol.com");
 
+            Console.WriteLine(p1);
+            Console.WriteLine();
             Console.WriteLine(p2);
+            Console.WriteLine();
             #endregion
 
             #region List of Contact Info
@@ -102,7 +102,9 @@ namespace TesterProgram
             Customer c2 = new Customer("465645", "Allison", "Lebinski", contact);
 
             Console.WriteLine(c1);
+            Console.WriteLine();
             Console.WriteLine(c2);
+            Console.WriteLine();
 
             #endregion
 
@@ -124,8 +126,10 @@ namespace TesterProgram
 
             CreditCardAccount a2 = new CreditCardAccount(26564, customers, 1656.23m, false, .64m);
 
-            //Console.WriteLine(a1);
+            Console.WriteLine(a1);
+            Console.WriteLine();
             Console.WriteLine(a2);
+            Console.WriteLine();
             #endregion
 
             #region Book
@@ -137,7 +141,9 @@ namespace TesterProgram
             Book b2 = new Book("The Phansom of the Opera", "Stephanie Meyer", 896);
 
             Console.WriteLine(b1);
+            Console.WriteLine();
             Console.WriteLine(b2);
+            Console.WriteLine();
             #endregion
 
             #region Book List
@@ -146,7 +152,20 @@ namespace TesterProgram
             books.Add(b2);
             #endregion
 
+            #region Library
+            Library library1 = new Library();
+            library1.Books = books;
+            library1.LibraryName = "Johnson County Public Library";
+            library1.StreetAddress = "12345 Johnson Dr";
+            library1.City = "Overland Park";
+            library1.State = "Kansas";
+            library1.Zip = "66209";
 
+            Library library2 = new Library(books, "Ottawa Public Library", "5645 W Ottawa Way", "Ottawa", "Kansas", "66564");
+
+            Console.WriteLine(library1);
+            Console.WriteLine(library2);
+            #endregion
 
         }//end main
     }//end class
