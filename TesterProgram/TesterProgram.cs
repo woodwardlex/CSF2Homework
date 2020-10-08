@@ -106,6 +106,29 @@ namespace TesterProgram
 
             #endregion
 
+            #region Customer List
+            List<Customer> customers = new List<Customer>();
+            customers.Add(c1);
+            customers.Add(c2);
+            #endregion
+
+            #region Credit Card Account
+            Console.WriteLine("Credit Card Accounts\n");
+
+            //CreditCardAccount a1 = new CreditCardAccount();
+            //a1.AccountNumber = 484895;
+            //a1.ContactInfo = customers;
+            //a1.Balance = 17899.56m;
+            //a1.IsPastDue = true;
+            //a1.AnnualInterestRate = .06m;
+
+            CreditCardAccount a2 = new CreditCardAccount(26564, customers, 1656.23m, false, .64m);
+
+            //Console.WriteLine(a1);
+            Console.WriteLine(a2);
+            #endregion
+
+
 
         }//end main
     }//end class
