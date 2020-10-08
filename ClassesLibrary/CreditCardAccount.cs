@@ -27,6 +27,8 @@ namespace ClassesLibrary
             AnnualInterestRate = annualInterestRate;
         }
 
+        public CreditCardAccount() { }
+
         //methods
         public override string ToString()
         {

@@ -115,17 +115,35 @@ namespace TesterProgram
             #region Credit Card Account
             Console.WriteLine("Credit Card Accounts\n");
 
-            //CreditCardAccount a1 = new CreditCardAccount();
-            //a1.AccountNumber = 484895;
-            //a1.ContactInfo = customers;
-            //a1.Balance = 17899.56m;
-            //a1.IsPastDue = true;
-            //a1.AnnualInterestRate = .06m;
+            CreditCardAccount a1 = new CreditCardAccount();
+            a1.AccountNumber = 484895;
+            a1.ContactInfo = customers;
+            a1.Balance = 17899.56m;
+            a1.IsPastDue = true;
+            a1.AnnualInterestRate = .06m;
 
             CreditCardAccount a2 = new CreditCardAccount(26564, customers, 1656.23m, false, .64m);
 
             //Console.WriteLine(a1);
             Console.WriteLine(a2);
+            #endregion
+
+            #region Book
+            Book b1 = new Book();
+            b1.Title = "Bridge to Tarabithia";
+            b1.Author = "Edgar Allen Poe";
+            b1.NumberOfPages = 465;
+
+            Book b2 = new Book("The Phansom of the Opera", "Stephanie Meyer", 896);
+
+            Console.WriteLine(b1);
+            Console.WriteLine(b2);
+            #endregion
+
+            #region Book List
+            List<Book> books = new List<Book>();
+            books.Add(b1);
+            books.Add(b2);
             #endregion
 
 
