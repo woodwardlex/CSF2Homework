@@ -153,6 +153,8 @@ namespace TesterProgram
             #endregion
 
             #region Library
+            Console.WriteLine("Library\n");
+
             Library library1 = new Library();
             library1.Books = books;
             library1.LibraryName = "Johnson County Public Library";
@@ -164,7 +166,29 @@ namespace TesterProgram
             Library library2 = new Library(books, "Ottawa Public Library", "5645 W Ottawa Way", "Ottawa", "Kansas", "66564");
 
             Console.WriteLine(library1);
+            Console.WriteLine();
             Console.WriteLine(library2);
+            Console.WriteLine();
+            #endregion
+
+            #region Song
+            Console.WriteLine("\nSong\n");
+
+            Song sg1 = new Song();
+            sg1.Title = "Thunderstruck";
+            sg1.Artist = "AC/DC";
+            sg1.LengthInSeconds = 4565;
+
+            Song sg2 = new Song("Silver Lining", "The Neighbourhood", 3265);
+
+            Console.WriteLine(sg1);
+            Console.WriteLine();
+            Console.WriteLine(sg2);
+            Console.WriteLine();
+            #endregion
+
+            #region Song List
+            List<Song> songs = new List<Song>() { sg1, sg2 };
             #endregion
 
         }//end main
