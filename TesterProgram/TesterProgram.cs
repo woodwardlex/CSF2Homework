@@ -51,7 +51,7 @@ namespace TesterProgram
 
             Console.WriteLine();
             #endregion
-            
+
             #region Login
             Console.WriteLine("Login\n");
 
@@ -173,8 +173,6 @@ namespace TesterProgram
             Console.WriteLine();
             #endregion
 
-            Console.Clear();
-
             #region Song
             Console.WriteLine("\nSong\n");
 
@@ -191,19 +189,36 @@ namespace TesterProgram
             Console.WriteLine();
             #endregion
 
-            #region Song Array
-            Song[] songs = { sg1, sg2 };
-            #endregion
-
             #region Artist
             Console.WriteLine("\nArtist\n");
 
-            Artist at1 = new Artist();
-            at1.Title = "NBHD";
-            at1.Genre = "Alternative";
-            at1.Songs = songs;
+            Song[] songs = { sg1, sg2 };
+            Artist artist = new Artist(songs,"HBHD", "Alternative");
+            Console.WriteLine(artist);
             #endregion
 
+            #region Motor Home
+            Console.WriteLine("\nMotor Home\n");
+
+            MotorHome mh1 = new MotorHome();
+            mh1.Make = "Swanson";
+            mh1.Model = "Renegade";
+            mh1.Year = 2012;
+            mh1.Weight = 12869;
+            mh1.NumberOfBeds = 3;
+
+            MotorHome mh2 = new MotorHome("Johnson", "Luxe 2000", 2018, 23564, 5);
+
+            Console.WriteLine(mh1);
+            Console.WriteLine();
+            Console.WriteLine(mh2);
+            #endregion
+
+            #region Truck
+            Console.WriteLine("\nTruck\n");
+
+
+            #endregion
         }//end main
     }//end class
 }//end namespace

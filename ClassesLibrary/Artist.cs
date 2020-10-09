@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace ClassesLibrary
 {
@@ -10,14 +11,14 @@ namespace ClassesLibrary
     {
         //fields
         //props
-        public Song[] Songs { get; set; }
+        public Song[] Song { get; set; }
         public string Title { get; set; }
         public string Genre { get; set; }
 
         //ctor
-        public Artist(Song[] songs, string title, string genre)
+        public Artist(Song[] song, string title, string genre)
         {
-            Songs = songs;
+            Song = song;
             Title = title;
             Genre = genre;
         }
@@ -26,10 +27,10 @@ namespace ClassesLibrary
         //methods
         public override string ToString()
         {
-            return string.Format("Title: '{0}'\n" +
-                "Genre: {1}\n" +
-                "Song: {2}",
-                Title, Genre, Songs);
+            return string.Format("Song: '{0}'\n" +
+                "Title: {1}\n" +
+                "Genre: {2}",
+                Song, Title, Genre);
         }
     }
 }
