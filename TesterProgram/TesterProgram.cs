@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 //Reference the ClassesLibrary
 using ClassesLibrary;
+//Reference the System.Collections
+using System.Collections;
 
 namespace TesterProgram
 {
@@ -171,12 +173,14 @@ namespace TesterProgram
             Console.WriteLine();
             #endregion
 
+            Console.Clear();
+
             #region Song
             Console.WriteLine("\nSong\n");
 
             Song sg1 = new Song();
-            sg1.Title = "Thunderstruck";
-            sg1.Artist = "AC/DC";
+            sg1.Title = "Devils Advocate";
+            sg1.Artist = "The Neighbourhood";
             sg1.LengthInSeconds = 4565;
 
             Song sg2 = new Song("Silver Lining", "The Neighbourhood", 3265);
@@ -187,8 +191,17 @@ namespace TesterProgram
             Console.WriteLine();
             #endregion
 
-            #region Song List
-            List<Song> songs = new List<Song>() { sg1, sg2 };
+            #region Song Array
+            Song[] songs = { sg1, sg2 };
+            #endregion
+
+            #region Artist
+            Console.WriteLine("\nArtist\n");
+
+            Artist at1 = new Artist();
+            at1.Title = "NBHD";
+            at1.Genre = "Alternative";
+            at1.Songs = songs;
             #endregion
 
         }//end main
