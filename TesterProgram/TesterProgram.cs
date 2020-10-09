@@ -158,14 +158,14 @@ namespace TesterProgram
             Console.WriteLine("Library\n");
 
             Library library1 = new Library();
-            library1.Books = books;
+            library1.Books = books[1];
             library1.LibraryName = "Johnson County Public Library";
             library1.StreetAddress = "12345 Johnson Dr";
             library1.City = "Overland Park";
             library1.State = "Kansas";
             library1.Zip = "66209";
 
-            Library library2 = new Library(books, "Ottawa Public Library", "5645 W Ottawa Way", "Ottawa", "Kansas", "66564");
+            Library library2 = new Library(books[2], "Ottawa Public Library", "5645 W Ottawa Way", "Ottawa", "Kansas", "66564");
 
             Console.WriteLine(library1);
             Console.WriteLine();
@@ -217,7 +217,18 @@ namespace TesterProgram
             #region Truck
             Console.WriteLine("\nTruck\n");
 
+            Truck t1 = new Truck();
+            t1.Make = "Toyota";
+            t1.Model = "Tacoma";
+            t1.Year = 2006;
+            t1.Weight = 2654;
+            t1.LoadCapacityLbs = 450.56f;
 
+            Truck t2 = new Truck("Ford", "F-150", 2012, 6354, 623.1f);
+
+            Console.WriteLine(t1);
+            Console.WriteLine();
+            Console.WriteLine(t2);
             #endregion
         }//end main
     }//end class
